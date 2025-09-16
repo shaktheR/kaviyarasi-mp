@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --spotify-bg: #121212;
+  --spotify-sidebar: #000000;
+  --spotify-text-primary: #ffffff;
+  --spotify-text-secondary: #b3b3b3;
+  --spotify-accent: #1db954;
+  --spotify-hover: #282828;
+  --spotify-card: #181818;
+  --spotify-player: #181818;
+}
+
+body {
+  background-color: var(--spotify-bg);
+  color: var(--spotify-text-primary);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#root {
+  height: 100vh;
+}
+
+.bg-spotify-bg {
+  background-color: var(--spotify-bg);
+}
+
+.bg-spotify-sidebar {
+  background-color: var(--spotify-sidebar);
+}
+
+.bg-spotify-card {
+  background-color: var(--spotify-card);
+}
+
+.bg-spotify-player {
+  background-color: var(--spotify-player);
+}
+
+.bg-spotify-hover:hover {
+  background-color: var(--spotify-hover);
+}
+
+.text-spotify-text-primary {
+  color: var(--spotify-text-primary);
+}
+
+.text-spotify-text-secondary {
+  color: var(--spotify-text-secondary);
+}
+
+.text-spotify-accent {
+  color: var(--spotify-accent);
+}
+
+.card:hover .play-button {
+  opacity: 1;
+}
+
+.play-button {
+  transition: opacity 0.2s;
+  opacity: 0;
+}
+
+.progress-container, .volume-container {
+  cursor: pointer;
+}
+
+.now-playing {
+  background: rgba(30, 215, 96, 0.1);
+  border-left: 3px solid #1db954;
+}
